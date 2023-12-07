@@ -14,11 +14,5 @@ class FetchBooksRepository implements IFetchBooks {
     return bookList;
   }
 
-  // @override
-  // Future<List<BookModel>> fetchBooks() async {
-  //   final response = await httpClient.get(EscriboApi.booksApi);
-  //   final bookMap = BookModel.fromMap(response);
-  //   final bookList = <BookModel>[];
-  //   return bookList;
-  // }
+
 }

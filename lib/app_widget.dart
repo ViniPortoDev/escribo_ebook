@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'views/home_view/home_view.dart';
+import 'pages/home_page/home_view.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});
@@ -11,7 +11,7 @@ class AppWidget extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       darkTheme: ThemeData.dark(),
       theme: ThemeData(fontFamily: 'Poppins'),
-      home: const HomeView(),
+      home: const HomePage(),
     );
   }
 }

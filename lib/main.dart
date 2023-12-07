@@ -9,6 +9,6 @@ void main() async {
   final dioService = DioService(dio: dio);
   final fetch = FetchBooksRepository(httpClient: dioService);
   final books = await fetch.fetchBooks();
-  print(books);
+  print(books[0].title);
   // runApp(AppWidget());
 }

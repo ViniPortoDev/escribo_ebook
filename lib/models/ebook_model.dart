@@ -31,12 +31,13 @@ class BookModel {
       id: map['id'] as int,
       title: map['title'] as String,
       author: map['author'] as String,
-      coverUrl: map['coverUrl'] as String,
-      downloadUrl: map['downloadUrl'] as String,
+      coverUrl: map['cover_url'] as String,
+      downloadUrl: map['download_url'] as String,
     );
   }
 
   String toJson() => json.encode(toMap());
 
-  factory BookModel.fromJson(String source) => BookModel.fromMap(json.decode(source) as Map<String, dynamic>);
+  factory BookModel.fromJson(String source) =>
+      BookModel.fromMap(json.decode(source) as Map<String, dynamic>);
 }

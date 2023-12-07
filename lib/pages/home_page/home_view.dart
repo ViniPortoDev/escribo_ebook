@@ -21,8 +21,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   void initState() {
-    controller.getBooks();
     super.initState();
+    controller.getBooks();
   }
 
   final controller = HomeController(

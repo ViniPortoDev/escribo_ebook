@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'pages/home_page/home_view.dart';
 
 class AppWidget extends StatelessWidget {

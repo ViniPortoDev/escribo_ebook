@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
 class BookModel {
@@ -8,12 +7,17 @@ class BookModel {
   final String coverUrl;
   final String downloadUrl;
 
+  bool isFavorited;
+  bool isDownloaded;
+
   BookModel({
     required this.id,
     required this.title,
     required this.author,
     required this.coverUrl,
     required this.downloadUrl,
+    this.isFavorited = false,
+    this.isDownloaded = false,
   });
 
   Map<String, dynamic> toMap() {
@@ -40,4 +44,8 @@ class BookModel {
 
   factory BookModel.fromJson(String source) =>
       BookModel.fromMap(json.decode(source) as Map<String, dynamic>);
+
+  favorite() => isFavorited = true;
+  unFavorite() => isFavorited = false;
+
 }
